@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+
+    "name": "Eunoia",
+    "description": "This extension will bring Eunoia to your Chrome and Life",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "Eunoia.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "declarativeContent",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "chrome_url_overrides" :{
+        "newtab" : "newPage.html"
+    }
+}
